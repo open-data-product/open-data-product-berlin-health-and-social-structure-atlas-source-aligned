@@ -1,12 +1,12 @@
 ---
-id: berlin-lor-health-and-social-structure-atlas-source-aligned
+id: berlin-health-and-social-structure-atlas-source-aligned
 metadata:
-  name: Berlin LOR Health and Social Structure Atlas (source-aligned)
+  name: Berlin Health and Social Structure Atlas (source-aligned)
   owner: Open Data Product
-  description: Source-aligned data product combining Berlin LOR health and social structure data
+  description: Source-aligned data product combining Berlin health and social structure data
   url:
   license:
-  updated: 2025-10-28
+  updated: 2025-11-09
   schema:
     - name: health_and_social_index
       description: health and social index
@@ -19,7 +19,7 @@ metadata:
     - name: health_sub_index
       description: health sub index
 input_ports:
-  - id: berlin-lor-health-and-social-structure-atlas-2013-00
+  - id: berlin-health-and-social-structure-atlas-2013-00
     metadata:
       name: Gesundheits- und Sozialstrukturatlas Berlin 2022
       owner: Senatsverwaltung für Wissenschaft, Gesundheit, Pflege und Gleichstellung Berlin
@@ -33,7 +33,7 @@ input_ports:
       - https://www.berlin.de/sen/gesundheit/_assets/daten/gesundheits-und-sozialstrukturatlas/gssa_2022_bezirksregionen.csv
       - https://www.berlin.de/sen/gesundheit/_assets/daten/gesundheits-und-sozialstrukturatlas/gssa_2022_prognoseraeume.csv
       - https://www.berlin.de/sen/gesundheit/_assets/daten/gesundheits-und-sozialstrukturatlas/gssa_2022_bezirke.csv
-  - id: berlin-lor-health-and-social-structure-atlas-2022-00
+  - id: berlin-health-and-social-structure-atlas-2022-00
     metadata:
       name: Gesundheits- und Sozialstrukturatlas Berlin 2022
       owner: Senatsverwaltung für Wissenschaft, Gesundheit, Pflege und Gleichstellung Berlin
@@ -61,62 +61,62 @@ transformation_steps:
     path: https://github.com/open-data-product/open-data-product-python-lib/blob/main/opendataproduct/transform/data_aggregator.py
     description: aggregates data to be used as output ports
 output_ports:
-  - id: berlin-lor-health-and-social-structure-atlas-2013-00-csv
+  - id: berlin-health-and-social-structure-atlas-2013-00-csv
     metadata:
-      name: Berlin Lor Health And Social Structure Atlas 2013 00 Csv
+      name: Berlin Health And Social Structure Atlas 2013 00 Csv
       owner: Open Data Product
       description:
-      url: https://github.com/open-data-product/open-data-product-berlin-lor-health-and-social-structure-atlas-source-aligned/tree/main/data/03-gold/berlin-lor-health-and-social-structure-atlas-2013-00-csv
+      url: https://github.com/open-data-product/open-data-product-berlin-health-and-social-structure-atlas-source-aligned/tree/main/data/03-gold/berlin-health-and-social-structure-atlas-2013-00-csv
       license:
-      updated: 2025-10-28
+      updated: 2025-11-09
       schema:
     files:
-      - https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-health-and-social-structure-atlas-source-aligned/main/data/03-gold/berlin-lor-health-and-social-structure-atlas-2013-00-csv/berlin-lor-health-and-social-structure-atlas-2013-00-district-regions.csv
-      - https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-health-and-social-structure-atlas-source-aligned/main/data/03-gold/berlin-lor-health-and-social-structure-atlas-2013-00-csv/berlin-lor-health-and-social-structure-atlas-2013-00-districts.csv
-      - https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-health-and-social-structure-atlas-source-aligned/main/data/03-gold/berlin-lor-health-and-social-structure-atlas-2013-00-csv/berlin-lor-health-and-social-structure-atlas-2013-00-forecast-areas.csv
-      - https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-health-and-social-structure-atlas-source-aligned/main/data/03-gold/berlin-lor-health-and-social-structure-atlas-2013-00-csv/berlin-lor-health-and-social-structure-atlas-2013-00-planning-areas.csv
-  - id: berlin-lor-health-and-social-structure-atlas-2013-00-parquet
+      - https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-health-and-social-structure-atlas-source-aligned/main/data/03-gold/berlin-health-and-social-structure-atlas-2013-00-csv/berlin-health-and-social-structure-atlas-2013-00-district-regions.csv
+      - https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-health-and-social-structure-atlas-source-aligned/main/data/03-gold/berlin-health-and-social-structure-atlas-2013-00-csv/berlin-health-and-social-structure-atlas-2013-00-districts.csv
+      - https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-health-and-social-structure-atlas-source-aligned/main/data/03-gold/berlin-health-and-social-structure-atlas-2013-00-csv/berlin-health-and-social-structure-atlas-2013-00-forecast-areas.csv
+      - https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-health-and-social-structure-atlas-source-aligned/main/data/03-gold/berlin-health-and-social-structure-atlas-2013-00-csv/berlin-health-and-social-structure-atlas-2013-00-planning-areas.csv
+  - id: berlin-health-and-social-structure-atlas-2013-00-parquet
     metadata:
-      name: Berlin Lor Health And Social Structure Atlas 2013 00 Parquet
+      name: Berlin Health And Social Structure Atlas 2013 00 Parquet
       owner: Open Data Product
       description:
-      url: https://github.com/open-data-product/open-data-product-berlin-lor-health-and-social-structure-atlas-source-aligned/tree/main/data/03-gold/berlin-lor-health-and-social-structure-atlas-2013-00-parquet
+      url: https://github.com/open-data-product/open-data-product-berlin-health-and-social-structure-atlas-source-aligned/tree/main/data/03-gold/berlin-health-and-social-structure-atlas-2013-00-parquet
       license:
-      updated: 2025-10-28
+      updated: 2025-11-09
       schema:
     files:
-      - https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-health-and-social-structure-atlas-source-aligned/main/data/03-gold/berlin-lor-health-and-social-structure-atlas-2013-00-parquet/berlin-lor-health-and-social-structure-atlas-2013-00-district-regions.parquet
-      - https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-health-and-social-structure-atlas-source-aligned/main/data/03-gold/berlin-lor-health-and-social-structure-atlas-2013-00-parquet/berlin-lor-health-and-social-structure-atlas-2013-00-districts.parquet
-      - https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-health-and-social-structure-atlas-source-aligned/main/data/03-gold/berlin-lor-health-and-social-structure-atlas-2013-00-parquet/berlin-lor-health-and-social-structure-atlas-2013-00-forecast-areas.parquet
-      - https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-health-and-social-structure-atlas-source-aligned/main/data/03-gold/berlin-lor-health-and-social-structure-atlas-2013-00-parquet/berlin-lor-health-and-social-structure-atlas-2013-00-planning-areas.parquet
-  - id: berlin-lor-health-and-social-structure-atlas-2022-00-csv
+      - https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-health-and-social-structure-atlas-source-aligned/main/data/03-gold/berlin-health-and-social-structure-atlas-2013-00-parquet/berlin-health-and-social-structure-atlas-2013-00-district-regions.parquet
+      - https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-health-and-social-structure-atlas-source-aligned/main/data/03-gold/berlin-health-and-social-structure-atlas-2013-00-parquet/berlin-health-and-social-structure-atlas-2013-00-districts.parquet
+      - https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-health-and-social-structure-atlas-source-aligned/main/data/03-gold/berlin-health-and-social-structure-atlas-2013-00-parquet/berlin-health-and-social-structure-atlas-2013-00-forecast-areas.parquet
+      - https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-health-and-social-structure-atlas-source-aligned/main/data/03-gold/berlin-health-and-social-structure-atlas-2013-00-parquet/berlin-health-and-social-structure-atlas-2013-00-planning-areas.parquet
+  - id: berlin-health-and-social-structure-atlas-2022-00-csv
     metadata:
-      name: Berlin Lor Health And Social Structure Atlas 2022 00 Csv
+      name: Berlin Health And Social Structure Atlas 2022 00 Csv
       owner: Open Data Product
       description:
-      url: https://github.com/open-data-product/open-data-product-berlin-lor-health-and-social-structure-atlas-source-aligned/tree/main/data/03-gold/berlin-lor-health-and-social-structure-atlas-2022-00-csv
+      url: https://github.com/open-data-product/open-data-product-berlin-health-and-social-structure-atlas-source-aligned/tree/main/data/03-gold/berlin-health-and-social-structure-atlas-2022-00-csv
       license:
-      updated: 2025-10-28
+      updated: 2025-11-09
       schema:
     files:
-      - https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-health-and-social-structure-atlas-source-aligned/main/data/03-gold/berlin-lor-health-and-social-structure-atlas-2022-00-csv/berlin-lor-health-and-social-structure-atlas-2022-00-district-regions.csv
-      - https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-health-and-social-structure-atlas-source-aligned/main/data/03-gold/berlin-lor-health-and-social-structure-atlas-2022-00-csv/berlin-lor-health-and-social-structure-atlas-2022-00-districts.csv
-      - https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-health-and-social-structure-atlas-source-aligned/main/data/03-gold/berlin-lor-health-and-social-structure-atlas-2022-00-csv/berlin-lor-health-and-social-structure-atlas-2022-00-forecast-areas.csv
-      - https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-health-and-social-structure-atlas-source-aligned/main/data/03-gold/berlin-lor-health-and-social-structure-atlas-2022-00-csv/berlin-lor-health-and-social-structure-atlas-2022-00-planning-areas.csv
-  - id: berlin-lor-health-and-social-structure-atlas-2022-00-parquet
+      - https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-health-and-social-structure-atlas-source-aligned/main/data/03-gold/berlin-health-and-social-structure-atlas-2022-00-csv/berlin-health-and-social-structure-atlas-2022-00-district-regions.csv
+      - https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-health-and-social-structure-atlas-source-aligned/main/data/03-gold/berlin-health-and-social-structure-atlas-2022-00-csv/berlin-health-and-social-structure-atlas-2022-00-districts.csv
+      - https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-health-and-social-structure-atlas-source-aligned/main/data/03-gold/berlin-health-and-social-structure-atlas-2022-00-csv/berlin-health-and-social-structure-atlas-2022-00-forecast-areas.csv
+      - https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-health-and-social-structure-atlas-source-aligned/main/data/03-gold/berlin-health-and-social-structure-atlas-2022-00-csv/berlin-health-and-social-structure-atlas-2022-00-planning-areas.csv
+  - id: berlin-health-and-social-structure-atlas-2022-00-parquet
     metadata:
-      name: Berlin Lor Health And Social Structure Atlas 2022 00 Parquet
+      name: Berlin Health And Social Structure Atlas 2022 00 Parquet
       owner: Open Data Product
       description:
-      url: https://github.com/open-data-product/open-data-product-berlin-lor-health-and-social-structure-atlas-source-aligned/tree/main/data/03-gold/berlin-lor-health-and-social-structure-atlas-2022-00-parquet
+      url: https://github.com/open-data-product/open-data-product-berlin-health-and-social-structure-atlas-source-aligned/tree/main/data/03-gold/berlin-health-and-social-structure-atlas-2022-00-parquet
       license:
-      updated: 2025-10-28
+      updated: 2025-11-09
       schema:
     files:
-      - https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-health-and-social-structure-atlas-source-aligned/main/data/03-gold/berlin-lor-health-and-social-structure-atlas-2022-00-parquet/berlin-lor-health-and-social-structure-atlas-2022-00-district-regions.parquet
-      - https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-health-and-social-structure-atlas-source-aligned/main/data/03-gold/berlin-lor-health-and-social-structure-atlas-2022-00-parquet/berlin-lor-health-and-social-structure-atlas-2022-00-districts.parquet
-      - https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-health-and-social-structure-atlas-source-aligned/main/data/03-gold/berlin-lor-health-and-social-structure-atlas-2022-00-parquet/berlin-lor-health-and-social-structure-atlas-2022-00-forecast-areas.parquet
-      - https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-health-and-social-structure-atlas-source-aligned/main/data/03-gold/berlin-lor-health-and-social-structure-atlas-2022-00-parquet/berlin-lor-health-and-social-structure-atlas-2022-00-planning-areas.parquet
+      - https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-health-and-social-structure-atlas-source-aligned/main/data/03-gold/berlin-health-and-social-structure-atlas-2022-00-parquet/berlin-health-and-social-structure-atlas-2022-00-district-regions.parquet
+      - https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-health-and-social-structure-atlas-source-aligned/main/data/03-gold/berlin-health-and-social-structure-atlas-2022-00-parquet/berlin-health-and-social-structure-atlas-2022-00-districts.parquet
+      - https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-health-and-social-structure-atlas-source-aligned/main/data/03-gold/berlin-health-and-social-structure-atlas-2022-00-parquet/berlin-health-and-social-structure-atlas-2022-00-forecast-areas.parquet
+      - https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-health-and-social-structure-atlas-source-aligned/main/data/03-gold/berlin-health-and-social-structure-atlas-2022-00-parquet/berlin-health-and-social-structure-atlas-2022-00-planning-areas.parquet
 observability:
   quality:
   operational:

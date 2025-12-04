@@ -1,7 +1,7 @@
 [project]
-name = "open-data-product-berlin-lor-health-and-social-structure-atlas-source-aligned"
+name = "open-data-product-berlin-health-and-social-structure-atlas-source-aligned"
 version = "0.1.0"
-description = "Source-aligned data product combining Berlin LOR health and social structure data"
+description = "Source-aligned data product combining Berlin health and social structure data"
 readme = "README.md"
 requires-python = ">=3.13"
 dependencies = [
